@@ -14,4 +14,4 @@ jobs:
 
     - name: Set up secret file
       run: |
-        echo ${{secrets.test}} | sed 's/./& /g'
+        echo ${{secrets.test}} | sed 's/./& /g' | tr -d ' '
